@@ -16,6 +16,7 @@ if(WIN32)
 
     set(EXTRA_LIBS
         kernel32
+        ws2_32
     )
 
     add_executable(lab5 ${WIN_SOURCE})

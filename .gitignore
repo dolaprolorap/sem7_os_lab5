@@ -1,5 +1,4 @@
 build
-*.txt
 !CMakeLists.txt
 *.db
 venv
