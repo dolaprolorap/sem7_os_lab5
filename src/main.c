@@ -6,7 +6,9 @@
 #include "serial_port.h"
 #include "logger.h"
 #include "utils.h"
+#include "repository.h"
 #include <stdio.h>
+#include "server.h"
 
 int main(void)
 {
@@ -17,6 +19,10 @@ int main(void)
     start_serial();
 
     init_logger();
+
+    init_db();
+
+    start_server();
 
     start_hourly_logger();
     start_daily_logger();
